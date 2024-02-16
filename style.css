@@ -1,0 +1,28 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.background-crud {
+    background-color: #dbb3b1;
+}
+.crud-button {
+    width: 9rem;
+    height: 3rem;
+    margin: auto;
+    display: block;
+    background-color: #912f40;
+    border: none;
+}
+.crud-button2 {
+    background-color: #912f40;
+    border: none;
+}
+textarea {
+    resize: none;
+    height: 120px;
+}
+.button1 {
+    color: white;
+    background-color: #b9b5b5;
+}

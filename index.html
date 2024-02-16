@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Crud System</title>
+</head>
+<body>
+    
+
+<main class="w-75 mx-auto my-3 ">
+    <section class="p-3 background-crud">
+        <div class="input-form mb-3">
+            <label for="ProductName">ProductName :</label>
+            <input type="text" class="form-control" id="ProductName" placeholder="product Name">
+        </div>
+        <div class="input-form mb-3">
+            <label for="ProductPrice">ProductPrice :</label>
+            <input type="number" class="form-control" id="ProductPrice" placeholder="product Price">
+        </div>
+        <div class="input-form mb-3">
+            <label for="ProductCategory">ProductCategory :</label>
+            <input type="text" class="form-control" id="ProductCategory" placeholder="product Category">
+        </div>
+        <div class="input-form mb-3">
+            <label for="ProductDescription">ProductDescription :</label>
+            <textarea class="form-control" id="ProductDescription" placeholder="product Description"></textarea>
+        </div>
+        <button id="addBtn" class="crud-button btn btn-danger" onclick="addProduct()">Add Product</button>
+        <button id="updateBtn" class="crud-button btn btn-danger d-none" onclick="updateProduct()">Update Product</button>
+    </section>
+    <input id="productSearch" type="text" oninput="searchProduct()" class="form-control w-75 mx-auto my-3" placeholder="Search...">
+    <section class="mt-4">
+        <table class="table">
+            <thead>
+                <tr>
+                    <td>Name</td>
+                    <td>Price</td>
+                    <td>Category</td>
+                    <td>Description</td>
+                    <td>Action</td>
+                </tr>
+            </thead>
+            <tbody id="tableData">
+                
+            </tbody>
+        </table>
+    </section>
+
+</main>
+    <script src="./bootstrap.bundle.min.js"></script>
+    <script src="./main.js"></script>
+</body>
+</html>
